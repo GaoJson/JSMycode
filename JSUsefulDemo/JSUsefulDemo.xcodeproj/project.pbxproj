@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F61A9B41D5DE82D00EE65AC /* JSStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F61A9B31D5DE82D00EE65AC /* JSStringUtil.m */; };
 		8FADBFB51D5AC29E00FBF42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FADBFB41D5AC29E00FBF42C /* main.m */; };
 		8FADBFB81D5AC29E00FBF42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FADBFB71D5AC29E00FBF42C /* AppDelegate.m */; };
 		8FADBFBB1D5AC29E00FBF42C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FADBFBA1D5AC29E00FBF42C /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F61A9B21D5DE82D00EE65AC /* JSStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStringUtil.h; sourceTree = "<group>"; };
+		8F61A9B31D5DE82D00EE65AC /* JSStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStringUtil.m; sourceTree = "<group>"; };
 		8FADBFB01D5AC29E00FBF42C /* JSUsefulDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSUsefulDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FADBFB41D5AC29E00FBF42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FADBFB61D5AC29E00FBF42C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				8FADBFB71D5AC29E00FBF42C /* AppDelegate.m */,
 				8FADBFB91D5AC29E00FBF42C /* ViewController.h */,
 				8FADBFBA1D5AC29E00FBF42C /* ViewController.m */,
+				8F61A9B21D5DE82D00EE65AC /* JSStringUtil.h */,
+				8F61A9B31D5DE82D00EE65AC /* JSStringUtil.m */,
 				8FADBFBC1D5AC29E00FBF42C /* Main.storyboard */,
 				8FADBFBF1D5AC29E00FBF42C /* Assets.xcassets */,
 				8FADBFC11D5AC29E00FBF42C /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				8FADBFBB1D5AC29E00FBF42C /* ViewController.m in Sources */,
 				8FADBFB81D5AC29E00FBF42C /* AppDelegate.m in Sources */,
 				8FADBFB51D5AC29E00FBF42C /* main.m in Sources */,
+				8F61A9B41D5DE82D00EE65AC /* JSStringUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				8FADBFC91D5AC29F00FBF42C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
