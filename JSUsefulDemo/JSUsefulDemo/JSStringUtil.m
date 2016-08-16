@@ -83,4 +83,22 @@
     return attributedString;
 }
 
++ (NSString *)urlStirngAddingPercentEncoding:(NSString *)string {
+    string = [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    return string;
+}
+
++ (NSString *)urlStirngRemovingPercentEncoding:(NSString *)string {
+    string = [string stringByRemovingPercentEncoding];
+    return string;
+}
+
+
+
+
+
+
+
+
+
 @end

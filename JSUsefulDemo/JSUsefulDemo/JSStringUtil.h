@@ -29,5 +29,15 @@
  */
 + (NSMutableAttributedString *)changeLabelColorOriginalString:(NSString *)originalString changeString:(NSString *)changeString;
 
+/**
+ * url 汉字转换URL编码格式
+ */
++ (NSString *)urlStirngAddingPercentEncoding:(NSString *)string;
+
+/**
+ * url URL编码格式转换汉字
+ */
++ (NSString *)urlStirngRemovingPercentEncoding:(NSString *)string;
+
 
 @end
