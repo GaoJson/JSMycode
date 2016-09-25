@@ -14,6 +14,8 @@
 		8FADBFBE1D5AC29E00FBF42C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FADBFBC1D5AC29E00FBF42C /* Main.storyboard */; };
 		8FADBFC01D5AC29E00FBF42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FADBFBF1D5AC29E00FBF42C /* Assets.xcassets */; };
 		8FADBFC31D5AC29E00FBF42C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FADBFC11D5AC29E00FBF42C /* LaunchScreen.storyboard */; };
+		8FB6C9E81D97B84F008E34CD /* JSCacheUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6C9E71D97B84F008E34CD /* JSCacheUtil.m */; };
+		8FB6C9EB1D97B85A008E34CD /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6C9EA1D97B85A008E34CD /* secondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		8FADBFBF1D5AC29E00FBF42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FADBFC21D5AC29E00FBF42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FADBFC41D5AC29E00FBF42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB6C9E61D97B84F008E34CD /* JSCacheUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCacheUtil.h; sourceTree = "<group>"; };
+		8FB6C9E71D97B84F008E34CD /* JSCacheUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCacheUtil.m; sourceTree = "<group>"; };
+		8FB6C9E91D97B85A008E34CD /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		8FB6C9EA1D97B85A008E34CD /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,13 @@
 				8FADBFB71D5AC29E00FBF42C /* AppDelegate.m */,
 				8FADBFB91D5AC29E00FBF42C /* ViewController.h */,
 				8FADBFBA1D5AC29E00FBF42C /* ViewController.m */,
+				8FB6C9E91D97B85A008E34CD /* secondViewController.h */,
+				8FB6C9EA1D97B85A008E34CD /* secondViewController.m */,
 				8F61A9B21D5DE82D00EE65AC /* JSStringUtil.h */,
 				8F61A9B31D5DE82D00EE65AC /* JSStringUtil.m */,
 				8F63C2ED1D8256FC001E5072 /* JSMacro.h */,
+				8FB6C9E61D97B84F008E34CD /* JSCacheUtil.h */,
+				8FB6C9E71D97B84F008E34CD /* JSCacheUtil.m */,
 				8FADBFBC1D5AC29E00FBF42C /* Main.storyboard */,
 				8FADBFBF1D5AC29E00FBF42C /* Assets.xcassets */,
 				8FADBFC11D5AC29E00FBF42C /* LaunchScreen.storyboard */,
@@ -160,6 +170,8 @@
 				8FADBFB81D5AC29E00FBF42C /* AppDelegate.m in Sources */,
 				8FADBFB51D5AC29E00FBF42C /* main.m in Sources */,
 				8F61A9B41D5DE82D00EE65AC /* JSStringUtil.m in Sources */,
+				8FB6C9EB1D97B85A008E34CD /* secondViewController.m in Sources */,
+				8FB6C9E81D97B84F008E34CD /* JSCacheUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
