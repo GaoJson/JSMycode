@@ -83,4 +83,79 @@
     return attributedString;
 }
 
+- (NSString *)contentTypeForImageData:(NSData *)data {
+    
+    uint8_t c;
+    
+    [data getBytes:&c length:1];
+    
+    switch (c) {
+            
+        case 0xFF:
+            
+            return @"jpeg";
+            
+        case 0x89:
+            
+            return @"png";
+            
+        case 0x47:
+            
+            return @"gif";
+            
+        case 0x49:
+            
+        case 0x4D:
+            
+            return @"tiff";
+            
+        case 0x52:
+            
+            if ([data length] < 12) {
+                
+                return nil;
+                
+            }
+            
+            NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+            
+            if ([testString hasPrefix:@"RIFF"] && [testString hasSuffix:@"WEBP"]) {
+                
+                return @"webp";
+                
+            }
+            
+            return nil;
+            
+    }
+    
+    return nil;
+    
+}
+
++ (NSString *)urlStirngAddingPercentEncoding:(NSString *)string {
+    string = [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    return string;
+}
+
++ (NSString *)urlStirngRemovingPercentEncoding:(NSString *)string {
+    string = [string stringByRemovingPercentEncoding];
+    return string;
+}
+
++ (CGSize)adjustTextHeight:(NSString *)text fontSize:(NSInteger)size width:(CGFloat)width {
+    UIFont *font = [UIFont boldSystemFontOfSize:size];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil];
+    CGSize contentSize = [text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
+    return contentSize;
+}
+
++ (CGSize)getLabelWidth:(NSString *)string labelHeight:(CGFloat)height fontSize:(NSInteger)fontSize {
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:fontSize];
+    CGSize size = [string boundingRectWithSize:CGSizeMake( MAXFLOAT,height) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+    return size;
+}
+
+
 @end
